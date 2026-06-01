@@ -23,10 +23,10 @@ const games = [{
     },
     {
         id: 3,
-        name: "Jogo 3",
-        url: "#",
+        name: "Projeto - Eduardo",
+        url: "https://rococo-frangollo-06f594.netlify.app",
         icon: "🚀",
-        desc: "",
+        desc: "Um jogo de parkour",
         likes: 0,
         views: 0
     },
