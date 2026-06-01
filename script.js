@@ -23,37 +23,37 @@ const games = [{
     },
     {
         id: 3,
-        name: "Em Breve: Jogo 3",
+        name: "Jogo 3",
         url: "#",
         icon: "🚀",
-        desc: "O próximo grande jogo está a chegar. Fica atento!",
+        desc: "",
         likes: 0,
         views: 0
     },
     {
         id: 4,
-        name: "Em Breve: Jogo 4",
+        name: "Jogo 4",
         url: "#",
         icon: "🕹️",
-        desc: "Mais diversão a caminho da nossa arena.",
+        desc: "",
         likes: 0,
         views: 0
     },
     {
         id: 5,
-        name: "Em Breve: Jogo 5",
+        name: "Jogo 5",
         url: "#",
         icon: "👾",
-        desc: "Prepara-te para novos desafios intergalácticos.",
+        desc: "",
         likes: 0,
         views: 0
     },
     {
         id: 6,
-        name: "Em Breve: Jogo 6",
+        name: "Jogo 6",
         url: "#",
         icon: "🏆",
-        desc: "O último lugar da nossa lista de elite.",
+        desc: "",
         likes: 0,
         views: 0
     }
