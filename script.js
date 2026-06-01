@@ -6,7 +6,7 @@
 const games = [{
         id: 1,
         name: "Projeto - Guilherme",
-        url: "merry-treacle-727dc3.netlify.app",
+        url: "https://merry-treacle-727dc3.netlify.app",
         icon: "🎮",
         desc: "Um jogo MetroidVania",
         likes: 0,
