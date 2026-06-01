@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone — Arena de Jogos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+</head>
+
+<body>
+
+    <div id="particles"></div>
+
+    <div id="app">
+
+        <!-- ===== HEADER (Original Style) ===== -->
+        <header>
+            <div class="header-inner">
+                <a class="logo" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">GAME<span>ZONE</span></a>
+                <nav>
+                    <button onclick="window.scrollTo({top:0, behavior:'smooth'})">🏠 Início</button>
+                    <button onclick="scrollToSection('contact')">📧 Contato</button>
+                    <button onclick="openQRModal()">📱 QR Code</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ===== TICKER ===== -->
+        <div class="ticker">
+            <span id="ticker-text">🎮 Bem-vindo à GameZone!</span>
+        </div>
+
+        <!-- ===== HERO (Original Style) ===== -->
+        <div class="hero">
+            <span class="hero-icon">🎮</span>
+            <h1>GAMEZONE</h1>
+            <p>A sua arena de jogos online. 6 jogos épicos com pontuações em tempo real!</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="scrollToSection('games-grid-section')">▶ JOGAR AGORA</button>
+                <button class="btn-secondary" onclick="scrollToSection('games-grid-section')">🕹️ VER JOGOS</button>
+            </div>
+        </div>
+
+        <!-- ===== BANNERS DE PROPAGANDA (Destaques Dinâmicos) ===== -->
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+            <!-- Banner Mais Acessado -->
+            <div class="ad-banner">
+                <div class="ad-content" id="banner-accessed">🚀 O MAIS ACESSADO: <span id="top-accessed-name" style="color:var(--neon-green)">A carregar...</span></div>
+            </div>
+
+            <!-- Banner Mais Curtido -->
+            <div class="ad-banner" style="border-color:var(--neon-pink)">
+                <div class="ad-content" id="banner-liked" style="color:var(--neon-pink); text-shadow: 0 0 15px var(--neon-pink);">❤️ O MAIS CURTIDO: <span id="top-liked-name" style="color:var(--neon-blue)">A carregar...</span></div>
+            </div>
+        </div>
+
+        <!-- ===== PROMO STRIP ===== -->
+        <div class="promo-strip">
+            ⚡ <span>6 JOGOS</span> disponíveis agora &nbsp;|&nbsp; 🏆 Compete pela <span>popularidade máxima</span> &nbsp;|&nbsp; 🚀 Novidades <span>em breve</span>
+        </div>
+
+        <!-- ===== GRID DE JOGOS ===== -->
+        <div id="games-grid-section" style="max-width:1200px;margin:0 auto;padding:0 20px;">
+            <div class="section-title">ESCOLHA O SEU JOGO</div>
+            <main class="games-grid" id="games-container">
+                <!-- Cards gerados via JS -->
+            </main>
+        </div>
+
+        <!-- ===== CONTACTO ===== -->
+        <section id="contact">
+            <h2 class="contact-title">Dúvidas, Sugestões ou Elogios?</h2>
+            <form class="contact-form" action="guilherme.9035@colegioprogresso.g12.br" method="POST">
+                <input type="hidden" name="_subject" value="Nova mensagem do GameZone!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label>O Seu Nome</label>
+                    <input type="text" name="name" placeholder="Como te chamas?" required>
+                </div>
+                <div class="form-group">
+                    <label>O Seu Email</label>
+                    <input type="email" name="email" placeholder="Para te podermos responder" required>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de Mensagem</label>
+                    <select name="type" required>
+          <option value="elogio">🌟 Elogio</option>
+          <option value="sugestao">💡 Sugestão</option>
+          <option value="reclamacao">⚠️ Reclamação</option>
+        </select>
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea name="message" rows="5" placeholder="Escreve aqui a tua mensagem..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">ENVIAR MENSAGEM</button>
+            </form>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>© 2025 GameZone — Arena de Jogos &nbsp;|&nbsp; Feito com ❤️ e JavaScript</p>
+        </footer>
+
+    </div>
+
+    <!-- ===== MODAL QR CODE (Estilo Referência) ===== -->
+    <div class="modal" id="qrModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeQRModal()">&times;</span>
+            <h2>📱 QR Code do Site</h2>
+            <p>Aponte a câmera do celular para acessar o GameZone BR!</p>
+            <div class="modal-qr-img">
+                <img src="qrc.png" alt="QR Code" onerror="this.src='https://via.placeholder.com/250?text=SEU_QRCODE_AQUI.PNG'">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
