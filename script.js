@@ -6,7 +6,7 @@
 const games = [{
         id: 1,
         name: "Projeto - Guilherme",
-        url: "guilhermecavalcante09.github.io/jogo-guilherme/projeto_jogo/",
+        url: "https://guilhermecavalcante09.github.io/jogo-guilherme/projeto_jogo/",
         icon: "🎮",
         desc: "Um jogo MetroidVania",
         likes: 0,
