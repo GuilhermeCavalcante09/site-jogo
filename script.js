@@ -32,8 +32,8 @@ const games = [{
     },
     {
         id: 4,
-        name: "Jogo 4",
-        url: "#",
+        name: "Projeto - Giovanna",
+        url: "https://stalwart-begonia-cb3516.netlify.app ",
         icon: "🕹️",
         desc: "",
         likes: 0,
