@@ -41,9 +41,9 @@ const games = [{
     },
     {
         id: 5,
-        name: "Jogo 5",
-        url: "#",
-        icon: "👾",
+        name: "Projeto - Yohan",
+        url: "https://coruscating-biscuit-1ff3af.netlify.app",
+        icon: "",
         desc: "",
         likes: 0,
         views: 0
@@ -51,7 +51,7 @@ const games = [{
     {
         id: 6,
         name: "Jogo 6",
-        url: "#",
+        url: "https://https://mellow-pithivier-0a980d.netlify.app/ ",
         icon: "🏆",
         desc: "",
         likes: 0,
