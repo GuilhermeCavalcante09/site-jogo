@@ -50,8 +50,8 @@ const games = [{
     },
     {
         id: 6,
-        name: "Jogo 6",
-        url: "https://https://mellow-pithivier-0a980d.netlify.app/ ",
+        name: "Projeto - Gabriela",
+        url: "https://mellow-pithivier-0a980d.netlify.app/",
         icon: "🏆",
         desc: "",
         likes: 0,
